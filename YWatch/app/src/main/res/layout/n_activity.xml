@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="?backimage">
+
+	<include
+		layout="@layout/n_title"/>
+
+	<android.support.v7.widget.CardView
+		android:layout_width="326dp"
+		android:layout_height="40dp"
+		app:cardCornerRadius="12dp"
+		android:clickable="true"
+		app:cardElevation="8dp"
+		android:foreground="?android:attr/selectableItemBackground"
+		android:transitionName="noticard"
+		android:layout_marginTop="25dp"
+		android:layout_gravity="center_horizontal">
+
+		<RelativeLayout
+			android:id="@+id/imageview"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<Switch
+				android:id="@+id/notiswitch"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="20dp"
+				android:layout_centerVertical="true"/>
+
+			<TextView
+				android:id="@+id/notification_text"
+				android:layout_width="90dp"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="20dp"
+				android:text="开启通知"
+				android:textColor="@color/textcolor"
+				android:textSize="15sp"/>
+
+		</RelativeLayout>
+
+	</android.support.v7.widget.CardView>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="选择软件"
+		android:layout_marginTop="25dp"
+		android:layout_marginLeft="40dp"
+		android:textColor="?fabNormals"/>
+	<android.support.v7.widget.CardView
+		android:layout_width="326dp"
+		android:layout_height="wrap_content"
+		app:cardCornerRadius="12dp"
+		android:clickable="true"
+		app:cardElevation="4dp"
+		android:foreground="?android:attr/selectableItemBackground"
+		android:layout_marginTop="15dp"
+	    android:layout_gravity="center_horizontal"
+		>
+<LinearLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	>
+	<RelativeLayout
+		android:id="@+id/imageview"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		>
+
+		<Switch
+			android:id="@+id/callon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="40dp"
+			android:layout_centerVertical="true"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="40dp"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="电话"
+				android:textColor="@color/textcolor"
+				android:textSize="14dp"/>
+
+			<TextView
+				android:id="@+id/Call_State"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="关闭"
+				android:textSize="14dp"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/imageview"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		>
+
+		<Switch
+			android:id="@+id/smson"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="40dp"
+			android:layout_centerVertical="true"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="40dp"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="短信"
+				android:textColor="@color/textcolor"
+				android:textSize="14dp"/>
+
+			<TextView
+				android:id="@+id/Sms_State"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="关闭"
+				android:textSize="14dp"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/imageview"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		>
+
+		<Switch
+			android:id="@+id/mmon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="40dp"
+			android:layout_centerVertical="true"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:orientation="vertical"
+			android:layout_marginLeft="40dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="微信"
+				android:textColor="@color/textcolor"
+				android:textSize="14dp"/>
+
+			<TextView
+				android:id="@+id/WeChat_State"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="关闭"
+				android:textSize="14dp"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/imageview"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+	>
+
+		<Switch
+			android:id="@+id/qqon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="40dp"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="40dp"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="QQ"
+				android:textColor="@color/textcolor"
+				android:textSize="14dp"/>
+
+			<TextView
+				android:id="@+id/QQ_State"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="关闭"
+				android:textSize="14dp"/>
+
+		</LinearLayout>
+
+	     </RelativeLayout>
+     </LinearLayout>
+	</android.support.v7.widget.CardView>
+</LinearLayout>
+

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff"
+	android:orientation="vertical"
+	tools:context="com.smartywatch.ywatch.HeartActivity">
+
+	<include
+		layout="@layout/heart_title"/>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="220dp"
+			android:background="?backimage"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="200dp"
+			android:background="?bottomview"/>
+
+		<RelativeLayout
+			android:id="@+id/h_RelativeLayout"
+			android:layout_width="150dp"
+			android:layout_height="150dp"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="20dp"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="false"
+			android:layout_centerInParent="false">
+			<ImageView
+				android:id="@+id/h_View"
+				android:transitionName="s"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@drawable/hollow_circle"/>
+
+			<ImageView
+				android:id="@+id/heart_Image"
+				android:layout_width="20dp"
+				android:layout_height="20dp"
+				android:src="@drawable/pheart"
+				android:layout_alignParentRight="true"
+				android:transitionName="xinlvcard"
+				android:layout_marginTop="60dp"
+				android:layout_marginRight="20dp"/>
+
+			<com.smartwatch.ywatch.MyTextView
+				android:layout_width="40dp"
+				android:layout_height="20dp"
+				android:text="BPM"
+				android:textColor="?hearttextcolor"
+				android:layout_marginTop="80dp"
+				android:gravity="center_horizontal"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10dp"/>
+
+			<com.smartwatch.ywatch.MyTextView
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:text="--"
+				android:textColor="#ff3838"
+				android:gravity="center_horizontal|center_vertical"
+				android:layout_centerInParent="true"
+				android:textSize="40sp"
+				android:id="@+id/heartnum"/>
+
+		</RelativeLayout>
+
+		<android.support.v7.widget.CardView
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/seven_cardview"
+			android:layout_width="326dp"
+			android:layout_height="wrap_content"
+			app:cardCornerRadius="12dp"
+			android:clickable="true"
+			android:foreground="?android:attr/selectableItemBackground"
+			app:cardElevation="4dp"
+			android:layout_marginTop="195dp"
+			android:layout_marginBottom="30dp"
+			android:layout_marginLeft="17dp">
+
+			<ListView
+				android:id="@+id/lvTrace"
+				android:layout_width="326dp"
+				android:divider="@null"
+				android:clickable="false"
+				android:listSelector="@android:color/transparent"
+				android:dividerHeight="0dp"
+				android:layout_centerHorizontal="true"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="12dp"
+				android:layout_marginBottom="12dp"/>
+
+		</android.support.v7.widget.CardView>
+
+	</FrameLayout>
+
+</LinearLayout>
+

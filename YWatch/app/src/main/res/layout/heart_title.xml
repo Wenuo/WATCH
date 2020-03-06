@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_titlebar"
+	android:layout_width="match_parent"
+	android:layout_height="70dp"
+	android:background="?titlecolor">
+
+	<TextView
+		android:id="@+id/heart_title"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:ellipsize="marquee"
+		android:gravity="center_horizontal|center"
+		android:fitsSystemWindows="true"
+		android:clipToPadding="true"
+		android:singleLine="true"
+		android:text="Heart"
+		android:textColor="@color/title_text_color"
+		android:textSize="20sp"/>
+
+	<ImageButton
+		android:id="@+id/heart_back"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="?android:attr/selectableItemBackgroundBorderless"
+		android:theme="@style/RippleWhite"
+		android:layout_marginLeft="15dp"
+		android:layout_marginTop="33dp"
+		android:fitsSystemWindows="true"
+		android:clipToPadding="true"
+		android:src="@drawable/bt"/>
+
+	<ImageButton
+		android:id="@+id/heart_find"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="?android:attr/selectableItemBackgroundBorderless"
+		android:theme="@style/RippleWhite"
+		android:clipToPadding="true"
+		android:layout_marginTop="33dp"
+		android:src="@drawable/search"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="15dp"
+		/>
+
+</RelativeLayout>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="?titlecolor">
+	
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal|center"
+        android:singleLine="true"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:text="YWatch"
+        android:textColor="@color/title_text_color"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
+

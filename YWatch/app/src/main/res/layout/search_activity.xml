@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<include
+		layout="@layout/search_title"/>
+	<FrameLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		>
+	
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:background="?titlecolor"
+		android:elevation="2dp"
+		android:transitionName="s"
+		/>
+	
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?bottomview"
+		android:layout_marginTop="200dp"
+		/>
+	<RelativeLayout
+		android:layout_marginTop="40dp"
+		android:layout_width="326dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:elevation="2dp"
+		>
+		<LinearLayout
+			android:layout_marginTop="20dp"
+			android:layout_width="326dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|center_horizontal">
+
+			<com.rengwuxian.materialedittext.MaterialEditText
+				android:id="@+id/startEdit"
+				android:layout_width="150dp"
+				android:layout_height="wrap_content"
+				android:hint="起始时间"
+				app:met_floatingLabel="highlight"
+			    app:met_primaryColor="?edittext_color"
+				app:met_baseColor="#ffffff"
+				
+				/>
+
+			<com.rengwuxian.materialedittext.MaterialEditText
+				android:id="@+id/endEdit"
+				android:layout_width="150dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="26dp"
+				app:met_floatingLabel="highlight"
+				android:hint="终止时间"
+				app:met_primaryColor="?edittext_color"
+				app:met_baseColor="#ffffff"
+				/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+	<android.support.v7.widget.CardView
+		android:id="@+id/lv_background"
+		android:layout_width="326dp"
+		android:layout_height="wrap_content"
+		app:cardCornerRadius="8dp"
+		app:cardElevation="4dp"
+		android:layout_marginTop="150dp"
+		android:layout_marginBottom="10dp"
+		android:layout_gravity="center_horizontal"
+	>
+
+	<ListView
+		android:id="@+id/searchListView"
+		android:layout_width="326dp"
+		android:layout_height="wrap_content"
+		android:divider="@null"
+		android:clickable="false"
+		android:listSelector="@android:color/transparent"
+		android:dividerHeight="0dp"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:layout_marginBottom="10dp"
+		android:layout_marginTop="15dp"/>
+	</android.support.v7.widget.CardView>
+	</FrameLayout>
+</LinearLayout>
+

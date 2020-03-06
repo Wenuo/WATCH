@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backimage" format="reference|color" />
+    <attr name="titlecolor" format="reference|color"/>
+	<attr name="bottomview" format="reference|color"/>
+	<attr name="hearttextcolor" format="reference|color"/>
+	<attr name="circl" format="reference|color"/>
+	<attr name="fabNormals" format="reference|color"/>
+	<attr name="fabPress" format="reference|color"/>
+	<attr name="spalsh_color" format="reference|color"/>
+	<attr name="bluetooth_text_color" format="reference|color"/>
+	<attr name="edittext_color" formal="reference|color"/>
+	<declare-styleable name="ColorPickerView">
+        <attr name="indicatorColor" format="color" /><!--指示点颜色-->
+        <attr name="indicatorEnable" format="boolean" /><!--是否启用指示点-->
+        <attr name="orientation" format="integer">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
+
+
+ 

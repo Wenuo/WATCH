@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_na"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+ <include 
+	 layout="@layout/main_activity"
+	 android:layout_width="match_parent"
+	 android:layout_height="match_parent"
+	 />
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/side_RelativeLayout"
+		android:background="#ffffff"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:layout_gravity="start"
+	>
+		<ImageView
+			android:id="@+id/head_iamge"
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:background="@drawable/head"
+			/>
+
+		<ListView
+			android:id="@+id/side_ListView"
+			android:layout_marginTop="20dp"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:divider="@android:color/transparent"
+			android:layout_centerHorizontal="true"
+			android:dividerHeight="5dp"
+		/>
+	
+	<com.smartwatch.ywatch.ColorPickerView
+		android:id="@+id/colorPickerView"
+		android:layout_height="12dp"
+		android:layout_width="200dp"
+		android:layout_gravity="center_horizontal"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+	    android:layout_marginTop="20dp"
+        app:indicatorEnable="true"
+        app:indicatorColor="#fff"
+        app:orientation="horizontal"/>
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/color_recycler"
+		android:layout_width="160dp"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20dp"
+		android:visibility="invisible"
+		/>
+	</LinearLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="40dp"
+	android:layout_height="40dp"
+	android:orientation="vertical">
+
+	<com.smartwatch.ywatch.ImageViewPlus
+		android:id="@+id/item_color_iamge"
+		android:layout_width="32dp"
+		android:layout_height="32dp"
+		android:src="@drawable/ic_launcher"
+		android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
