@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /storage/emulated/0/浏览器下载专用/YWatch/app/src/main/aidl/com/android/internal/telephony/ITelephony.aidl
+ * Original file: /storage/emulated/0/Ywatch/icewatermelon-WATCH-master/WATCH/YWatch/app/src/main/aidl/com/android/internal/telephony/ITelephony.aidl
  */
 package com.android.internal.telephony;
 public interface ITelephony extends android.os.IInterface

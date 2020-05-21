@@ -11,6 +11,7 @@ import android.widget.CompoundButton.*;
 import android.support.v4.app.*;
 import java.util.*;
 import android.content.pm.*;
+import junit.runner.*;
 
 
 public class NotificationActivity extends BaseActivity 
@@ -67,8 +68,13 @@ public class NotificationActivity extends BaseActivity
 					SharedPreferences.Editor edi=sps.edit();
 			        if (isChecked){
 						if(!isEnabled()){
-						  Intent intent = new Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS");
-						  startActivity(intent); 
+							//if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
+								Intent intent= new Intent(Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS);
+								startActivity(intent);
+							
+						  //Intent intent = new Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS");
+						 // startActivity(intent); 
+						 
 							edi.putBoolean("aiChecked",true);
 						
 						}
